@@ -1,0 +1,8 @@
+Hardware:
+Processor - Intel(R) Core i7-3630QM CPU @ 2.40GHz 2.40 GHz
+Ram memory - 16 GB
+
+Measured times:
+100 threads - 40 milliseconds
+1000 threads - 220 milliseconds
+5000 threads - 1000 milliseconds

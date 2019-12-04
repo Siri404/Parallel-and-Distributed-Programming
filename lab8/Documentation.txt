@@ -1,0 +1,21 @@
+Lab 8
+
+Hardware:
+Processor - Intel(R) Core i7-3630QM CPU @ 2.40GHz 2.40 GHz
+Ram memory - 16 GB
+
+Algorithm: Backtracking
+The algorithm generates all possible paths starting from each node and checks if a hamiltonian cycle was found.
+Each thread executes the backtracking for one node. One lock was used to prevent threads trying to set the result simultaneously.
+
+Measured times:
+
+        \ThreadCount| -----------------------------------------------------
+GraphSize\          |      1    |      2      |      4     |       16     |
+--------------------|-----------|-------------|------------|--------------|
+        5           |     4 ms  |     1 ms    |    1 ms    |      2 ms    |
+--------------------|-----------|-------------|------------|--------------|
+        50          |    11 ms  |     9 ms    |    7 ms    |      9 ms    |
+--------------------|-----------|-------------|------------|--------------|
+        500         |  5919 ms  |   2872 ms   |   2040 ms  |    1623 ms   |
+---------------------------------------------------------------------------
